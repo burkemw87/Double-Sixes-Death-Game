@@ -9,9 +9,7 @@ def roll_dice():
     is_double_sixes = False
     dice_1 = random.randint(1, 6)
     dice_2 = random.randint(1, 6)
-    dice_3 = random.randint(1, 6)
-    dice_4 = random.randint(1, 6)
-    if dice_1 == 6 and dice_2 == 6 and dice_3 == 6 and dice_4 == 6:
+    if dice_1 == 6 and dice_2 == 6:
         is_double_sixes = True
     return is_double_sixes
 
@@ -43,7 +41,7 @@ def play_game():
 
 if __name__ == '__main__':
 
-    times_to_play = 1
+    times_to_play = 10
     play_count_list = list(range(times_to_play))
     round_lost_list = list()
     player_lost_list = list()
